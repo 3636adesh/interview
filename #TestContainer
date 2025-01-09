@@ -1,0 +1,12 @@
+#Test Container
+
+Testcontainers: Key Benefits and Issues Addressed
+
+    Static Integration Infrastructure Issues
+        Shared test environments can cause conflicts, e.g., one pipeline inserts data while another deletes it, leading to inconsistent test results and failures.
+
+    Real Dependency Testing
+        Testcontainers allow testing with real dependencies (e.g., actual databases) instead of in-memory alternatives, ensuring more accurate test results.
+
+    Consistency Across Local and CI
+        Provides the same developer experience locally and in CI pipelines, eliminating environment discrepancies.

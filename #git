@@ -1,0 +1,29 @@
+#git
+
+
+git config --list
+git config --global user.email ""
+git config -global user.name ""
+
+git config --global init.defaultBranch <name>   like main , dev ,qa
+
+git status	
+
+write --> add --> commit
+
+--------------------------------
+
+git int --> [working directory]-> git add --> [stagging area] --> git commit --> [ Repo ] --> git push [github]
+
+
+---------------------------------
+
+git add file1 file2
+git add .
+
+git commit -m "first commit"   [message tone -> present, imperative]
+
+git log	
+git log --oneline
+
+git config --global core.editor "subl --wait"  [ for subline text]

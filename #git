@@ -26,5 +26,4 @@ git commit -m "first commit"   [message tone -> present, imperative]
 git log	
 git log --oneline
 
-
 git config --global core.editor "subl --wait"  [ for subline text]

@@ -10,3 +10,9 @@ Testcontainers: Key Benefits and Issues Addressed
 
     Consistency Across Local and CI
         Provides the same developer experience locally and in CI pipelines, eliminating environment discrepancies.
+
+
+ in mocikto :-
+ given
+ when
+ then        

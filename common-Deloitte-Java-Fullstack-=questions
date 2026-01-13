@@ -1,0 +1,68 @@
+Here is a list of **common Deloitte Java Fullstack interview questions** (just questions, no answers or explanations):
+
+### Core Java & OOP
+- What is the difference between an abstract class and an interface in Java?
+- Explain method overloading vs. method overriding.
+- What is the hashcode-equals contract? Why does it matter?
+- How would you implement a Singleton pattern in Java? How can you make it thread-safe?
+- What is the difference between String, StringBuilder, and StringBuffer?
+- What are checked and unchecked exceptions in Java?
+- What are different access modifiers and their scopes?
+- Describe garbage collection in Java.
+
+### Data Structures & Coding
+- Write a Java program to reverse a string without using built-in methods.
+- Given an array, find the maximum element in Java.
+- Write a Java program to count duplicate values in a column.
+- How would you find the number of islands in a 2D matrix?
+- Which list implementation would you use for dynamically adding/removing elements from both ends?
+
+### Spring Boot & Microservices
+- What is Dependency Injection and how is it achieved in Spring?
+- What is the difference between @Controller and @RestController?
+- How do you implement exception handling in Spring Boot applications?
+- What is a circuit breaker pattern? How does it work?
+- How does service discovery work in microservices?
+- Explain how you would secure a microservices architecture.
+- What is the function of an API Gateway in a microservice setup?
+- Explain the use of @Autowired annotation in Spring.
+
+### SQL, JPA & Hibernate
+- Explain the concept of a foreign key with an example.
+- How do you perform a JOIN operation between two tables in SQL?
+- What is a clustered vs. non-clustered index? How do they impact query performance?
+- Describe many-to-many association mapping in Hibernate/JPA.
+- Write an SQL query to count number of employees in each department.
+
+### Frontend/Fullstack
+- How would you call a REST endpoint from the frontend?
+- What are the advantages of using Angular or React with Spring Boot backend?
+- How do you handle CORS issues in a full stack application?
+
+### DevOps, Docker & Kubernetes
+- What is a Dockerfile? Explain its instructions.
+- How do you troubleshoot a container that keeps crashing?
+- What are the differences between a container and a virtual machine?
+- How would you optimize a Docker image?
+- What are Deployments, Pods, ReplicaSets and Services in Kubernetes?
+- Explain rolling updates vs. blue-green deployment in Kubernetes.
+- How do you set resource requests and limits in a Kubernetes Pod?
+
+### Design Patterns & Best Practices
+- Explain the SOLID principles in object-oriented design.
+- What is dependency inversion? Give an example.
+- How would you apply the proxy or circuit breaker pattern in Java?
+
+### Scenario/Project-Based
+- Give a brief introduction about yourself and your recent projects.
+- What was your role in your previous projects? What technical decisions did you make?
+- How would you design and deploy a scalable e-commerce application using Java Fullstack technologies?
+
+These reflect Deloitte's focus areas for Java Fullstack roles covering OOPs, Spring Boot, microservices, DevOps, SQL, practical coding, and scenario-based problem-solving[1][2][3][4][5].
+
+[1] https://www.geeksforgeeks.org/interview-experiences/deloitte-interview-experience-for-full-stack-java-developer/
+[2] https://www.youtube.com/watch?v=NlgtpGphqaQ
+[3] https://www.linkedin.com/posts/yash-shah-java-fullstack-developer_deloitte-big4-javafullstack-activity-7283686569058652160-GYsc
+[4] https://blog.internshala.com/deloitte-java-developer-interview-questions/
+[5] https://nodeflair.com/companies/deloitte/interviews/full-stack-java-developer
+[6] https://www.reddit.com/r/developersIndia/comments/1kx12ae/question_about_3rd_round_for_deloitte_full_stack/

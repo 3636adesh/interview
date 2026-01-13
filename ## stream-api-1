@@ -1,0 +1,226 @@
+## stream-api-1
+
+package org.example.practice;
+
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class PracticeBeforefinalInterview {
+    public static void main(String[] args) {
+
+
+      List<Integer> numbers = Arrays.asList(5, 12, 9, 21, 30, 12, 5, 8, 13, 2, 45, 67, 12);
+
+        // Sample List of Strings
+       List<String> stringList = Arrays.asList(
+                "Java", "Streams", "Lambda", "Functions", "", "java", "apple", "banana", "Apple", "hello", "world", "HELLO"
+        );
+
+        // Sample Sentence String
+        String sampleSentence = "hello world welcome to java streams and lambda expressions hello world";
+
+        // Sample List of Employees
+        List<Employee> employeeList = Arrays.asList(
+                new Employee(1, "Alice", "HR", 28, 50000),
+                new Employee(2, "Bob", "IT", 35, 80000),
+                new Employee(3, "Charlie", "Finance", 25, 45000),
+                new Employee(4, "David", "IT", 32, 75000),
+                new Employee(5, "Eve", "Finance", 29, 62000),
+                new Employee(6, "Frank", "HR", 41, 90000),
+                new Employee(7, "Grace", "IT", 24, 55000),
+                new Employee(8, "Hannah", "HR", 31, 60000),
+                new Employee(9, "Ivy", "Finance", 38, 72000),
+                new Employee(10, "Jack", "IT", 26, 67000)
+        );
+
+        //    ✅ Beginner (20 Practical Questions)
+//Given a list of integers, return a list of even numbers.
+        System.out.println(numbers.stream().filter(x-> x%2==0).collect(Collectors.toList()));
+
+//
+//Convert a list of strings to uppercase.
+        System.out.println(stringList.stream().map(x->x.toUpperCase()).collect(Collectors.toList()));
+//
+//Find the count of strings with length > 5.
+        System.out.println(stringList.stream().filter(x->x.length()>5).count());
+//
+//Sort a list of integers in descending order.
+        System.out.println(numbers.stream().sorted((a,b)->b-a).collect(Collectors.toList()));
+//
+//Remove duplicate elements from a list.
+        System.out.println(numbers.stream().distinct().collect(Collectors.toList()));
+//
+//Given a list of names, print only those that start with 'A'.
+        System.out.println(stringList.stream().filter(x->x.startsWith("A")).collect(Collectors.toList()));
+//
+//Convert a list of strings to a single comma-separated string.
+        System.out.println(stringList.stream().reduce((a,b)->a+","+b).get());
+//
+//Find the first element in a stream that starts with "J".
+        System.out.println(stringList.stream().filter(x->x.startsWith("J")).findFirst().get());
+//
+//Check if any element in the list is null.
+        System.out.println(employeeList.stream().filter(Objects::nonNull).collect(Collectors.toList()));
+//
+//Multiply each number in a list by 2 and collect the result.
+        System.out.println(numbers.stream().map(x->x*2).collect(Collectors.toList()));
+//
+        int[] numberArray = {12, 45, 67, 89, 23, 56, 90, 15, 33, 60};
+//Create a stream from an array and filter values > 50.
+        System.out.println(Arrays.stream(numberArray).boxed().filter(x->x>50).collect(Collectors.toList()));
+
+
+//
+//Count how many times "Java" appears in a list.
+        System.out.println(stringList.stream().filter(x->x.contains("Java")).count());
+//
+//Given a list of integers, find the maximum value.
+        System.out.println(numbers.stream().max((a,b)->a-b).get());
+//
+//Given a list of integers, find the minimum value.
+        System.out.println(numbers.stream().max((a,b)->b-a).get());
+//
+//Check if all elements in a list are positive.
+        System.out.println(numbers.stream().allMatch(x->x>=0));
+//
+//Skip the first 3 elements and print the rest.
+        System.out.println(numbers.stream().skip(3).collect(Collectors.toList()));
+//
+//Limit the output to the first 5 elements in a list.
+        System.out.println(numbers.stream().limit(5).collect(Collectors.toList()));
+//
+        char[] charArray = {'a','b','c'};
+//Join list of characters ['a','b','c'] to a string "abc".
+        System.out.println(new String(charArray));
+//
+//Find the sum of all elements in a list.
+        System.out.println(numbers.stream().reduce((a,b)->a+b).get());
+//
+//Remove empty strings from a list.
+        System.out.println(stringList.stream().filter(Objects::nonNull).filter(x-> !x.trim().isEmpty()).collect(Collectors.toList()));
+
+//
+//🔷 Intermediate (20 Practical Questions)
+//Group a list of strings by their length.
+        System.out.println(stringList.stream().collect(Collectors.groupingBy(x->x.length())));
+
+//
+//Find the frequency of each word in a list.
+        System.out.println(stringList.stream().collect(Collectors.groupingBy(x->x,Collectors.counting())));
+//
+//Find the second highest number in a list.
+        System.out.println(numbers.stream().sorted((a,b)->b-a).skip(1).limit(1).collect(Collectors.toList()));
+//
+        List<List<Integer>> nestedList = Arrays.asList(
+                Arrays.asList(1, 2, 3),
+                Arrays.asList(4, 5),
+                Arrays.asList(6, 7, 8, 9),
+                Arrays.asList(10),
+                Collections.emptyList(),  // to test handling empty inner lists
+                Arrays.asList(11, 12)
+        );
+//Flatten a list of lists (List<List<Integer>>) into a single list.
+        System.out.println(nestedList.stream().flatMap(List::stream).collect(Collectors.toList()));
+
+//
+//Given a list of people, filter all adults (age >= 18).
+        System.out.println(employeeList.stream().filter(x->x.age>18).collect(Collectors.toList()));
+//
+//Create a map of name to age from a list of Person objects.
+        System.out.println(employeeList.stream().collect(Collectors.toMap(x->x.name,x->x.age)));
+//
+//Group a list of employees by department name.
+        System.out.println(employeeList.stream().collect(Collectors.groupingBy(x->x.department)));
+//
+//Partition a list of numbers into odd and even.
+        System.out.println(numbers.stream().collect(Collectors.partitioningBy(x->x%2==0)));
+//
+//Sort a list of Employee objects by salary.
+        System.out.println(employeeList.stream().sorted((a,b)->(int)a.salary-(int)b.salary).collect(Collectors.toList()));
+//
+//Find the average salary from a list of Employee objects.
+        System.out.println(employeeList.stream().collect(Collectors.averagingInt(x->(int)x.salary)));
+//
+//Filter distinct strings ignoring case.
+        System.out.println(stringList.stream().distinct().collect(Collectors.toList()));
+//
+//Count the number of occurrences of each character in a string.
+        System.out.println(sampleSentence.chars().mapToObj(x->(char)x).collect(Collectors.groupingBy(x->x,Collectors.counting())));
+//
+        List<String> sentences = Arrays.asList(
+                "Java streams are powerful and concise",
+                "Lambda expressions make code cleaner",
+                "Streams can transform and filter data",
+                "Functional programming is elegant",
+                "Code readability improves with streams",
+                "Java and streams work well together"
+        );
+//From a list of sentences, extract all unique words.
+        System.out.println(Arrays.stream(sentences.stream().reduce((a, b) -> a + b).get().split(" ")).collect(Collectors.groupingBy(x->x,Collectors.counting())).entrySet().stream().filter(x->x.getValue()==1).collect(Collectors.toMap(x->x,x->x.getValue())));
+//
+//Create a comma-separated string of employee names sorted by age.
+//        System.out.println(employeeList.stream().sorted((a,b)->a.age-b.age).reduce((a,b)->a.name+","+b.name).get());
+//
+//Find common elements between two lists using streams.
+//        not sure
+//
+//Convert a list of integers to their squares and filter only those greater than 100.
+        System.out.println(numbers.stream().map(x->Math.pow(x,2)).filter(x->x>100).collect(Collectors.toList()));
+//
+        String csvString="7,8,5,2,4,65,9,6,3,4,5";
+//Given a CSV string of numbers, convert it to a sorted list of integers.
+        System.out.println(Arrays.stream(csvString.split(",")).mapToInt(x->Integer.parseInt(x)).boxed().sorted().collect(Collectors.toList()));
+//
+//Find the longest string in a list.
+        System.out.println(stringList.stream().max((a,b)->a.length()-b.length()).get());
+//
+//Find all palindromes in a list of strings.
+//        don't know
+//
+//Find the first non-repeated character in a string.
+        System.out.println(sampleSentence.chars().mapToObj(x->(char)x).collect(Collectors.groupingBy(x->x,Collectors.counting())));
+//
+//🔴 Advanced (20 Practical Questions)
+//Implement a custom collector to reverse a list.
+//
+//Write a stream pipeline that generates the first 10 Fibonacci numbers.
+//
+//Given a stream of Employee objects, group by department and find the highest paid in each.
+//
+//Process a large text file to count word frequencies using streams.
+//
+//Use reduce() to compute factorial of a number.
+//
+//From a nested list of Department -> Employee, find all employees earning > X.
+//
+//Write a method to lazily load data using Stream.generate() for 100 items.
+//
+//Count how many duplicate strings exist in a list.
+//
+//Given a list of transactions, calculate total amount per user using groupingBy.
+//
+//Parallel stream: Sum all even numbers from a large range.
+//
+//From a list of employees, list top 3 highest paid per department.
+//
+//Write a collector that collects strings into a TreeSet with reverse ordering.
+//
+//Implement a stream pipeline that extracts all vowels from a paragraph.
+//
+//Chunk a list into fixed-size batches using streams.
+//
+//Paginate a list using skip and limit — get page N with size M.
+//
+//Find the second most frequent character in a string.
+//
+//Compute the mode (most frequent element) from a list.
+//
+//Given a stream of dates, find the most recent one.
+//
+//Given a list of file paths, count the total size of .txt files.
+//
+//Write a stream pipeline that filters, maps, and collects based on multiple predicates dynamically.
+
+
+    }

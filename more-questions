@@ -1,0 +1,140 @@
+CHUBB INSURANCE:
+1> components of Apache Camel
+2> how to write test cases of Apache camel
+3> junit which version?
+4> Mockito which version?
+5> why java 1.8 to Java 17
+6> how to mock static class?
+7>microservice how have you worked?
+8>any Jenkins code have u written?
+9> what work hv u done as SM?
+10> what about Log4J?
+11>write a code
+   String s ="AAASSDDFFAA" --> A3S2D2F2A2
+
+Capgemini:
+1. What is AOP?
+2. Default scope for bean.
+3. what is the difference between intermediate and terminal stream operation.
+4. what are the functional interface we used in java 8? 
+5. what is the argument used in filter?
+6. return type of Predicate.
+7. Difference between component and componentscan?
+8. Difference between configuration and enableAutoConfiguration.
+9. write down a program of immutable class.
+10. 1 stream api program.
+
+Persistent:
+1. Code - fetch second larger no through stream api
+2. SQL to fetch second highest salary of employee.
+3. what is the difference between Oracle and MySQL.
+4. write down a recursive program to reverse the string.
+5. @Transactional propagation in Springboot.
+6. Authorization and authentication how does it work?
+7. Frequency count for a word through stream api.
+8. why u want to join in service based cpny?
+9. have u hands on experience on kafka.
+
+
+3RD may: CTS
+1. for data access which collection framework we use?
+2. diff btn ArrayList and vector?
+3. Difference between treeset and hashset?
+4. Difference between Iterator and ListIterator?
+5. what is failsafe and failfast?
+6. difference between collection and collections?
+7. How can u make list read only?
+8. what is final, finally and finalize?
+9. if catch block gets executed finally block will execute or not?
+10. if in catch block exception is there then in finally can be exception there?
+      what exception would be caught in thi scase?
+| Can we throw exception in finally? | ✅ Yes |
+| Will it override earlier exceptions? | ✅ Yes |
+| Good practice? | 🚫 No (dangerous and confusing unless you're very careful) |
+
+| Can we give return statement in finally? | ✅ Yes |
+| Will it override earlier return statement in try/ catch? | ✅ Yes |
+| Good practice? | 🚫 No (dangerous and confusing unless you're very careful) |
+
+11.checked exception and unchecked exception?
+12. Do we have to declare exception in super class for checked exception?
+13. Do we have to declare exception in super class for unchecked exception?
+14. exception overriding concept.
+15. Do we need have to/ must handle NPE in code? -No as this is unchecked exception.
+16. Exception hierarchy.
+Object
+└── Throwable
+    ├── Error (Serious problems you shouldn't catch)
+    │   ├── OutOfMemoryError
+    │   ├── StackOverflowError
+    │   └── InternalError
+    └── Exception (Recoverable problems)
+        ├── RuntimeException (Unchecked exceptions)
+        │   ├── NullPointerException
+        │   ├── ArrayIndexOutOfBoundsException
+        │   ├── ArithmeticException
+        │   ├── ClassCastException
+        │   └── IllegalArgumentException
+        └── (Checked Exceptions)
+            ├── IOException
+            │   ├── FileNotFoundException
+            │   └── EOFException
+            ├── SQLException
+            ├── InterruptedException
+            └── ParseException
+17.Difference between hashset and hashmap.
+18.Diff between comparable and comparator.
+19.what is web application and non web application?
+20.Can we implement web application through SpringBoot?
+21.what is the scope we use in Spring?
+22.how can we infuse dynamic server in springboot?'
+23.how can we do exception handling in Springboot?
+24.flatmap program.
+25. filter stream api program.
+26.Customize singletone class.
+27.Customized immutable class.
+28.why u have migrated from junit 4 to junit 5?
+29. Have u faced any difficulties while migrating clients from coretax to onetax?
+30. How to write parameterized test in junit?
+31. How do we do grouping in stream?
+32. what is the role of Spring actuator?
+33. circuit breaker design in MS and Saga pattern design in MSB?
+34. @ExceptionHandler and @AdviceException conceptualize question.
+35. lazy loading and eager loading.
+36. nested list creation using arrayList.
+37. Functional interface means?
+38. HTTP status - 502, 504, 500, 404,b 402, 400, etc means
+39. what is compleatable feature?
+40. difference between PUT and PATCH http method.
+
+TCS:
+1. why springbbot over spring?
+2. pallendrome check program
+3. exception hierarchy writing
+4. how to do json parse
+5. how to do xml parsing?
+6. why we use functional interface?
+7. what is lambda function?
+8. eager loading and lazy loading?
+9. caching in hibernate?
+10. how can we implement those?
+
+
+EverNorth:
+1. custom exception how to implement?
+2. ways of bean creation in spring?
+3. how system will understand in time of deploying what environment config should be fetched?
+4. what are the annotation u used in springboot?
+5. problem of hashmap.
+6. when we override equals and hashcode method?
+7. Object class method names?
+8. string s ="mou" and String s= newString("mou");
+   what is the difference here?
+9. new features in Springboot.
+10. if i want to order employeelist based on id then which collection should be good.
+11. diff btn LIST and SET.
+12. Difference between linked list and arraylist.
+13. how to handle exception ijnspringboot?
+14. program to fetch missed no in a series of sequence.
+3. Find the second highest number in an array
+

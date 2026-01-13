@@ -1,0 +1,19 @@
+##question-1
+
+1.Difference between 1st and 2nd level cache 
+2.Factory Design pattern
+3.Coding:Find duplicates in array along with its frequency
+4.Coding:Height of Binary Search tree.
+5.Lambda expressions and Stream API - use cases and scenarios along with coding hands on.
+
+------------
+
+1) Self intro about your Project
+2)What are java 8 Features
+3)What is Functional Interface
+4)What is Major difference between "Runnable" and "Callable Interface"?
+5)What is @transactional annotation do and if you getting any exceptions while inserting the data, what will happen then?
+6) what is Concurrent Modification Exception? How it occurs?
+8)What is Linkedhashmap and treemap write a code for how these works? 
+9)You have an array of Integers:{1,2,3,4,5} write a code to find the second largest number of the Array
+8)Output prediction Coding questions

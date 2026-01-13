@@ -1,0 +1,64 @@
+##questions
+
+1. Behavioral & Project-Based Questions
+These often start the interview to gauge fit and experience.
+
+Introduce yourself and walk through your current/previous projects (focus on your role, tech stack, challenges, and decisions like DB choice).
+Why KPMG? Why did you leave your previous role?
+Describe obstacles faced in a project and how you overcame them.
+What are your key responsibilities in backend development? (e.g., API design, integration).
+
+2. Core Java & OOP Concepts
+Expect basics and mid-level questions; they test fundamentals.
+
+What is Inheritance? Explain with an example.
+Difference between Abstract Class and Interface.
+Difference between Method Overloading and Method Overriding.
+What is a NullPointerException? How do you avoid it?
+What are Java 8 features? (e.g., Streams, Lambdas).
+What is a Functional Interface? Give an example.
+Key differences between Java 8 and Java 11 (e.g., modules, HTTP client).
+How do you handle exceptions in Java? Best practices (e.g., checked vs unchecked).
+What is the difference between Runnable and Callable interfaces?
+What is Concurrent Modification Exception? How does it occur and how to prevent it?
+
+3. Collections & Data Structures
+Common for backend efficiency discussions.
+
+Difference between List and Set.
+Difference between ArrayList and LinkedList.
+What is a Collection in Java? Explain the framework hierarchy.
+Explain the internal working of HashMap (hashing, buckets, collision resolution).
+What is LinkedHashMap? What is TreeMap? Write code to demonstrate.
+How do you ensure thread safety in collections (e.g., ConcurrentHashMap)?
+
+4. Spring Boot & Frameworks
+KPMG often asks about enterprise tools.
+
+Difference between Spring and Spring Boot.
+What is Dependency Injection? How does it work in Spring?
+What does the @Transactional annotation do? What happens if an exception occurs during data insertion?
+Describe your experience with Spring frameworks (e.g., Spring MVC, Hibernate).
+
+5. Microservices, APIs & Architecture
+Focus on scalable backend design.       
+
+What is a REST API? Explain HTTP methods (GET, POST, PUT, DELETE) and their uses.
+What is Microservices architecture? Pros/cons vs monolith.
+What is Token Authentication (e.g., JWT)?
+What is Agile Methodology? Your experience with it.
+
+6. Databases & SQL
+Often includes a query-writing task.
+
+List two database connection properties in application.properties (e.g., spring.datasource.url, spring.datasource.username).
+Write a SQL query to find the 2nd highest salary (include id, name, salary).
+Write a SQL query joining three tables: employee (id, dept_id, name), department (dept_id, name), salary (emp_id, amount).
+
+7. Coding & Problem-Solving
+Prepare for live coding (e.g., on HackerRank or shared editor).
+
+Write a program to reverse a string.
+Given an array of integers {1,2,3,4,5}, find the second largest number.
+Predict the output of code snippets (e.g., involving loops, exceptions, or collections).
+Implement an interface (e.g., Building) in two classes (School, Hospital) and explain.

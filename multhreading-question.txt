@@ -1,0 +1,166 @@
+Core Concepts
+What is the difference between synchronized block and ReentrantLock? When would you prefer one over the other?
+
+What are the memory visibility guarantees provided by volatile? How is it different from synchronized?
+
+What is a happens-before relationship in Java Memory Model?
+
+Explain the Java Memory Model (JMM) and how it affects multithreaded code.
+
+Can a ThreadLocal variable cause a memory leak? Explain with a scenario.
+
+What is false sharing and how does it affect performance in multithreaded programs?
+
+What’s the difference between wait() and sleep()? How does notify()/notifyAll() work?
+
+Can a thread be restarted after it has completed execution? Why or why not?
+
+What are daemon threads? How are they different from user threads?
+
+Why is double-checked locking used in singleton pattern? Explain its issues before Java 5.
+
+⚙️ Concurrency Utilities (java.util.concurrent)
+What is the difference between Executor, ExecutorService, and ScheduledExecutorService?
+
+What is the difference between Callable and Runnable?
+
+How does CompletableFuture differ from Future? What are some common use cases?
+
+Explain how ForkJoinPool works. When is it better than ThreadPoolExecutor?
+
+What is the difference between CountDownLatch, CyclicBarrier, and Phaser?
+
+How does a BlockingQueue work? What are common implementations and use cases?
+
+How does ConcurrentHashMap achieve thread-safety and high performance?
+
+What’s the difference between synchronizedMap, Hashtable, and ConcurrentHashMap?
+
+What are the atomic classes (AtomicInteger, AtomicReference, etc.)? How do they achieve atomicity?
+
+What is a StampedLock? How does it differ from ReentrantReadWriteLock?
+
+🧪 Real-World & Tricky Scenarios
+How would you implement a thread-safe cache?
+
+Design a thread pool from scratch.
+
+How would you detect and resolve a deadlock in Java?
+
+How would you implement a producer-consumer system using BlockingQueue?
+
+Design a system where multiple threads can read but only one can write (read-write lock scenario).
+
+How to ensure FIFO execution of tasks using ExecutorService?
+
+What precautions would you take to avoid starvation or livelock?
+
+How would you gracefully shutdown an ExecutorService and wait for tasks to complete?
+
+How would you implement a parallel file downloader using multiple threads?
+
+How do you manage backpressure in multithreaded systems?
+
+
+-------------------------------------
+What is the Java Memory Model?
+Describe how the ExecutorService framework improves thread management compared to manually creating threads.
+
+Explain the difference between the Runnable and Callable interfaces.
+How would you avoid deadlocks in a concurrent Java application?
+
+What is a thread pool and why is it useful?
+
+What is the ForkJoinPool?
+
+How does the synchronized keyword work and what are its limitations?
+
+How can you achieve thread safety in Java collections?
+
+What are Future and FutureTask in Java?
+
+Describe how Java handles thread lifecycle management.
+
+How would you handle one thread waiting for an event before another continues?
+
+Producer-Consumer problem implementation?
+
+How to perform asynchronous computation and combine results?
+
+What is a volatile variable in Java?
+2. 
+3. Synchronization & Thread Safety
+4. Java Concurrency Utilities
+java.util.concurrent package: Master ExecutorService, thread pools, Future/FutureTask, and especially concurrent collections like ConcurrentHashMap.
+
+Synchronizers: Tools such as CountDownLatch, CyclicBarrier, Semaphore, and Exchanger for coordination between thread
+
+5. Deadlocks, Livelocks, and Starvation
+6. Immutable Objects and Atomic Variables
+7. Advanced Task Management
+8. Best Practices and Patterns
+9. Performance and Scalability Impacts
+10. Testing and Debugging Concurrency
+What is thread-safety? Is Vector a thread-safe class?
+What is a race condition in Java? Give one example.
+
+How to stop a thread in Java?
+What happens when an Exception occurs in a thread?
+What is the difference between the interrupted() and isInterrupted() method in Java?
+How do you share data between two threads in Java?
+What is the difference between notify and notifyAll in Java?
+Why are wait, notify, and notifyAll not inside the Thread class?
+Why should you check the condition for waiting in a loop?
+What is the difference between synchronized and concurrent collection in Java?
+What is the concurrency level of ConcurrentHashMap in Java?
+What is Semaphore in Java?
+What is a thread pool? Why should you use a thread pool in Java?
+What happens if you submit a task when the queue of the thread pool is already filled?
+What is the difference between the submit() and execute() method in a thread pool in Java?
+Write code to solve the Producer-Consumer problem in Java.
+How do you avoid deadlock in Java? Write code.
+What is the difference between livelock and deadlock in Java?
+CompletableFuture
+How to use CompletableFuture for asynchronous programming in Java?
+Is Swing thread-safe? What do you mean by Event Dispatch Thread (EDT) in Swing?
+
+Executor / ExecutorService
+What is the difference between Executor, ExecutorService, and ThreadPoolExecutor?
+
+
+What is the purpose of submit() vs execute() in ExecutorService?
+
+How can you cancel a running task submitted to an ExecutorService?
+
+How does shutdown() differ from shutdownNow() in ExecutorService?
+
+What is the difference between invokeAll(), invokeAny(), and submit()?
+
+How do you implement a custom thread pool with a specific task rejection policy?
+
+How do you ensure FIFO execution of tasks in a thread pool?
+
+
+How does ScheduledExecutorService differ from Timer?
+
+🔹 ForkJoinPool
+What is the Fork/Join framework and when should you use it?
+
+How does work-stealing work in ForkJoinPool?
+
+What is the role of RecursiveTask and RecursiveAction in the Fork/Join framework?
+
+What is the difference between ForkJoinPool and ThreadPoolExecutor?
+
+How does ForkJoinPool.commonPool() behave and when is it used?
+
+How does parallelism level affect the behavior of a ForkJoinPool?
+
+How do you handle exceptions in tasks run by a ForkJoinPool?
+
+What is the significance of the join() and invoke() methods in Fork/Join tasks?
+
+How do you submit a non-recursive task to a ForkJoinPool?
+
+Can you use ForkJoinPool for IO-bound tasks? Why or why not?
+

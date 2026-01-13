@@ -1,0 +1,101 @@
+Core Java & Java 8
+What are the new features introduced in Java 8? Explain with examples.
+
+How do functional interfaces and lambda expressions work in Java 8?
+
+What is the difference between primitive and wrapper classes in Java?
+
+How does exception handling work in Java (checked vs unchecked exceptions)? Give code snippets to catch multiple exceptions.
+
+What is a method reference, and how is it different from a lambda expression?
+
+How does the Optional class work? What is the difference between Optional.of() and Optional.ofNullable()?
+
+Spring Boot & Microservices Concepts
+What is the difference between Monolithic and Microservices Architecture?
+
+Explain Spring Boot. How is it different from traditional Spring?
+
+What Spring Boot annotations do you use most frequently? Why?
+
+Explain the flow of a REST API call from frontend to backend and back.
+
+What are bean scopes in Spring Boot? How does dependency injection work?
+
+How can you inject a specific bean when multiple beans of the same type exist?
+
+What is the use of the @Primary annotation in Spring?
+
+How do you use application profiles in Spring Boot?
+
+What is the default embedded server in Spring Boot, and how do you configure another server?
+
+What mechanisms do you use to externalize configurations?
+
+Microservices-Specific Questions
+What is service discovery? How would you set up a discovery server like Eureka?
+
+How do microservices communicate with each other? What protocols are used (e.g., REST, gRPC, messaging queues)?
+
+What is an API Gateway, and what problems does it solve?
+
+What is the Saga pattern, and how is it implemented in microservices?
+
+How do you ensure data consistency across distributed microservices?
+
+What are advantages and challenges of using microservices?
+
+Explain how you would secure communication between microservices, particularly with JWT tokens.
+
+What is circuit breaker pattern, and how do you implement it in Spring Boot?
+
+How do you monitor and handle failures in microservices?
+
+Practical & Coding Questions
+Write code to implement Runnable using a lambda expression.
+
+Given a list of objects, use Java Streams to filter, group, or aggregate data (e.g., find the average rating of book reviews above a certain threshold).
+
+Write an SQL query to return the second-highest salary from an employee table.
+
+Give an example of REST template usage in Spring Boot.
+
+Scenario-Based & Advanced Architecture
+Describe how you would design a microservices system for high availability (multi-region, fault-tolerance, load balancing).
+
+How do you manage configurations across multiple microservices environments?
+
+What are the roles and use-cases for tools like Docker and Kubernetes in microservices deployment?
+
+How do you implement service-to-service authentication and authorization?
+
+What is the CAP theorem, and why is it relevant to microservices?
+
+Frequently Asked at Infosys
+How one microservice authenticates another with JWT?
+
+How would you check if a service is up and running?
+
+What is the default port for Spring Boot applications?
+
+What is Spring Security and how do you use filters and segmentation?
+
+What’s the difference between collection and collection framework?
+
+What is Spring Batch?
+
+
+Topic	Example Questions	Relevance to Microservices
+Linked Lists	- Reverse a linked list
+- Find the middle of a linked list	Efficient data structure for message queues in services
+Arrays	- Find duplicates in an array
+- Two-sum problem	Handling large datasets, caching mechanisms
+Trees	- Tree traversal (in-order, pre-order, post-order)
+- Find the height of a tree	Hierarchical data, service dependency graphs
+Hashmaps	- Implement a hashmap
+- Handle collisions in hashmaps	Caching, service discovery, and load balancing
+Strings	- Count similar characters (e.g., "aaabbbcc" → a=3, b=3, c=2)
+- Check palindrome	String manipulation in APIs, logging, and monitoring
+General Algorithms	- Binary search
+- Sorting algorithms (e.g., quicksort, mergesort)
+- Recursion

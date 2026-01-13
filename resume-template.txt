@@ -1,0 +1,100 @@
+--------------------------------------------
+upGrad-
+As a Java Backend Developer at upGrad, you will be a core contributor to building scalable and high-performance backend services that power our industry-leading edtech platform. You will collaborate with cross-functional teams to design and develop microservices, implement secure APIs, and ensure performance and reliability of backend systems.
+
+
+--------------------------------------------------
+smartdocs-
+
+Built scalable Java Spring Boot backend services integrating SAP, ServiceNow, and AI-powered microservices, with Redis, Elasticsearch, and real-time messaging across Teams, Google Chat, and WhatsApp for 10k+ users, focusing on API optimization and performance tuning.
+
+---------------
+https://www.linkedin.com/in/adesh-malunjkar-206816246
+
+----------
+
+https://github.com/3636adesh
+
+-------
+
+Hi, I'm Adesh Malunjkar, a Java Backend Developer with 3 years of experience in building scalable microservices using Spring Boot, Kafka, and AKS. I've worked on enterprise platforms at upGrad and SmartDocs, focusing on performance, security, and cloud-native development. Looking forward to opportunities where I can contribute to high-impact backend systems.
+-------------
+
+https://zelevate.io/jobs
+www.sampoorna.com
+https://ats.uplers.com/
+https://app.flexiple.com/
+timejobs
+https://developers.turing.com/jobs
+lookcv 
+https://www.fondpeace.com/JobTension
+https://www.instahyre.com/
+https://www.placementindia.com/job-search/java-programmer-jobs-in-pune.html
+https://builtinpune.in/
+greenhouse.io
+https://careerclust.com/jobs
+https://jobs.smartrecruiters.com/
+https://www.hirist.tech/
+curtshot
+
+
+https://www.instahyre.com/search-jobs?company_size=0&isLandingPage=true&job_type=1&search=true&skills=Java&years=3
+page = 10 and Showing 20 page ho gaye
+
+skills:-
+java, Spring Boot, Spring Security, Hibernate/JPA,Angular, REST APIs, Microservices, SQL, Git, JUnit, Mockito, Agile/Scrum, Docker, CI/CD (basic), system design
+
+
+----------
+
+message to hiring manager
+
+I’m a passionate Java backend developer with 3+ years of experience building scalable and efficient systems. I’m excited about the opportunity to contribute my skills and grow with your team.
+
+--------------
+cover letter
+
+I am interested in the Java Backend Developer role . With 3+ years of experience in Java, Spring Boot, REST APIs, and microservices, I am confident I can contribute effectively to your team.
+
+-----------
+How soon are you able to join if selected?
+
+I am currently serving a 30-day notice period with my present employer, so I would be able to join within 30 days from the date of offer acceptance.
+
+------
+
+Reason for changing:-
+
+
+I’m looking for better growth opportunities where I can take on more challenging projects, enhance my skills, and contribute more effectively to the organization.
+
+
+I’m looking for better growth opportunities.
+------
+
+Reason for applying
+
+I am seeking an opportunity to leverage my Java backend development skills, contribute to impactful projects, and grow within a challenging and collaborative environment.
+
+---------
+
+What interests you about working for this company?
+
+
+What excites me about working here is the chance to be part of a dynamic team that solves complex challenges and builds solutions that truly make a difference.
+
+---
+
+What interests you about this role?*
+
+I'm excited about this role because it lets me work on scalable backend systems with Java and Spring Boot, solve real-world problems, and grow while contributing to impactful projects
+
+-------
+
+3636@Adesh
+3636@AdeshMalunjkar
+
+-----
+Pune
+Bengaluru
+Hyderabad							

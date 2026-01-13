@@ -1,0 +1,95 @@
+
+
+
+How do you deploy a Dockerized Spring Boot app to Kubernetes?
+
+What are Deployments, Pods, ReplicaSets, and Services in Kubernetes?
+
+Explain Service types: ClusterIP, NodePort, and LoadBalancer.
+
+How does Kubernetes handle service discovery?
+How do rolling updates and rollbacks work in Kubernetes?
+
+
+What is a Helm chart, and how would you use it in a Java microservices deployment?
+
+Explain ConfigMaps and Secrets. How are sensitive and environment-specific configs managed?
+
+What are taints and tolerations?
+
+How do you set resource requests and limits, and why are they important?
+
+Explain troubleshooting steps for a Pod stuck in a Pending or CrashLoopBackOff state.
+
+How do you monitor a Kubernetes cluster (tools like Prometheus, Grafana)?
+
+Explain Horizontal Pod Autoscaler (HPA) vs. Vertical Pod Autoscaler (VPA).
+How would you containerize a Spring Boot application and deploy it to a Kubernetes cluster?
+How can you manage environment-specific configurations for a Java application in Kubernetes?
+What are best practices for securing a multi-tenant cluster?
+
+Discuss strategies for Kubernetes deployment: rolling, canary, blue-green.
+
+What tools and approaches do you use for CI/CD (e.g., Jenkins) with Kubernetes?
+What is Kubernetes? Why is it needed?
+
+
+What are the main components of Kubernetes architecture?
+What is a Pod? How is it different from a container?
+
+What is a Deployment in Kubernetes?
+
+What is a Service in Kubernetes? Types of services?
+
+What is ConfigMap and Secret in K8s?
+
+What is a Namespace in Kubernetes and when do you use it?
+
+What is Helm and what problem does it solve?
+
+🔹 Commands & Usage
+How do you deploy a Dockerized Spring Boot app to Kubernetes?
+
+What is the use of kubectl apply, get, describe, logs, exec?
+
+How do you scale a deployment in Kubernetes?
+
+How do you perform a rolling update in K8s?
+
+🔹 Advanced Topics
+How does Kubernetes handle service discovery?
+
+How does Kubernetes handle load balancing?
+
+How do you secure communication between services in Kubernetes?
+
+How do you monitor Kubernetes clusters?
+
+What is a Pod in Kubernetes?
+What is the purpose of kubectl?
+What is a Deployment in Kubernetes?
+What is a Kubernetes Service?
+What are the different types of Kubernetes Services?
+What are ConfigMaps and Secrets, and what are they used for?
+What are Namespaces in Kubernetes?
+What are Labels and Selectors?
+What are Persistent Volumes (PVs) and Persistent Volume Claims (PVCs)?
+How does networking work in Kubernetes?
+What is Role-Based Access Control (RBAC) in Kubernetes?
+How does Kubernetes autoscaling work?
+How do you debug a Pod that is not starting?
+What are rolling updates and rollbacks in Kubernetes?
+What is an Ingress in Kubernetes?
+What are resource limits and requests in Kubernetes?
+What are Init containers?
+What are Pod disruptions and how can you ensure high availability?
+What are StatefulSets and how do they differ from Deployments?
+What is a Service mesh and how does it relate to Kubernetes?
+How can you secure a Kubernetes cluster?
+What are Taints and Tolerations in Kubernetes?
+What are Sidecar containers and when would you use them?
+What are some common causes of Pod errors in Kubernetes?
+What is a Mutating admission webhook?
+How can you achieve zero-downtime Deployments in Kubernetes?
+What are Custom Resource Definitions (CRDs)?
+What are Kubernetes operators?

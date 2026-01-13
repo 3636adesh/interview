@@ -1,0 +1,160 @@
+##sql-questions
+
+1. Fundamentals & Basics
+
+What is SQL, and what are the different sublanguages (DDL, DML, DCL, TCL)?
+Difference between SQL and NoSQL databases? When would you choose one over the other?
+What is a Primary Key vs. Foreign Key? Why are they important?
+
+2. Joins & Relationships
+
+Explain the types of JOINs (INNER, LEFT, RIGHT, FULL OUTER) with a real-world example.
+What is a Self-Join? When is it used?
+Difference between Cartesian Product and Equi-Join?
+
+3. Normalization & Design
+
+What is Normalization? Explain 1NF, 2NF, and 3NF with examples.
+What is Denormalization? Pros and cons in a production environment?
+When would you use a Composite Key?
+
+4. Queries & Functions
+
+Difference between WHERE and HAVING clauses?
+What are Aggregate Functions? Explain SUM, COUNT, AVG with GROUP BY.
+What is a Subquery? Types (Correlated vs. Non-Correlated)?
+Explain the difference between UNION and UNION ALL.
+
+5. Advanced Concepts
+
+What are Indexes? Types (Clustered vs. Non-Clustered) and trade-offs?
+What is a View? When to use it over a Table?
+Explain ACID properties in Transactions.
+What is a Stored Procedure vs. Function?
+How does a Trigger work? Use cases?
+--------------
+
+🔹 SQL Basics
+
+What is SQL?
+Difference between SQL and PL/SQL
+What are DDL, DML, DCL, TCL commands?
+Difference between DELETE, TRUNCATE, and DROP
+What is a NULL value?
+What is a constraint?
+Types of constraints in SQL
+Difference between CHAR and VARCHAR
+🔹 Keys & Relationships
+
+What is a Primary Key?
+Difference between Primary Key and Unique Key
+What is a Foreign Key?
+Can a table have multiple primary keys?
+What is a Composite Key?
+What is Referential Integrity?
+
+🔹 Joins (VERY IMPORTANT)
+
+What is a JOIN?
+Types of joins in SQL
+Difference between INNER JOIN and OUTER JOIN
+Difference between LEFT JOIN and RIGHT JOIN
+What is a SELF JOIN?
+What is a CROSS JOIN?
+
+Join vs Subquery – which is better and why?
+
+🔹 Functions & Clauses
+
+Difference between WHERE and HAVING
+What is GROUP BY?
+What are Aggregate functions?
+Can we use aggregate functions in WHERE clause?
+Difference between COUNT(*) and COUNT(column_name)
+
+What is DISTINCT?
+What is ORDER BY?
+
+🔹 Subqueries
+
+What is a Subquery?
+
+Types of subqueries
+Correlated vs Non-correlated subquery
+Can a subquery return multiple rows?
+Difference between IN, EXISTS, ANY, ALL
+
+🔹 Indexes (High probability)
+
+What is an Index?
+Types of indexes
+When should you create an index?
+When should you avoid using an index?
+Clustered vs Non-clustered index
+How does index improve performance?
+
+🔹 Transactions
+
+What is a Transaction?
+What are ACID properties?
+What is COMMIT?
+What is ROLLBACK?
+What is SAVEPOINT?
+What happens if system crashes before commit?
+
+🔹 Locks & Concurrency
+
+What is Locking?
+Types of locks
+What is Deadlock?
+Difference between Deadlock and Starvation
+What is Isolation Level?
+
+🔹 Views & Stored Objects
+
+What is a View?
+Simple view vs Complex view
+Can we update data through a view?
+What is a Stored Procedure?
+Procedure vs Function
+What is a Cursor?
+When should you use a cursor?
+
+🔹 Performance & Optimization
+
+What is Query Optimization?
+How do you find slow queries?
+What is an Execution Plan?
+Difference between DELETE and TRUNCATE performance
+What is table partitioning?
+What causes full table scan?
+
+🔹 Advanced / Oracle-Specific (Bonus)
+
+What are Window Functions?
+Difference between ROW_NUMBER, RANK, DENSE_RANK
+What is MERGE statement?
+What is Materialized View?
+What is Sequence?
+Difference between TEMP table and CTE
+What is Normalization?
+
+
+Key SQL topics frequently tested include:
+
+How to use different types of JOINs (INNER, LEFT, etc.) and explain their differences.
+
+Aggregation queries: GROUP BY, HAVING, calculating averages, maximum/minimum values, and percentages.
+
+Window functions: RANK(), DENSE_RANK(), ROW_NUMBER(), and their uses.
+
+Subqueries: difference between correlated and non-correlated subqueries, and when to use a CTE.
+
+Data filtering and analysis: finding duplicates, deleting duplicates but keeping one, finding records in one table but not another.
+
+Advanced problem-solving: identifying VIP users based on activity thresholds, calculating percentage success rates (e.g., of payment completions), daily activity streaks.
+
+Query performance: understanding indexing, optimizing slow queries.
+
+
+Miscellaneous: handling NULLs, case sensitivity, pivot/unpivot, running totals, a

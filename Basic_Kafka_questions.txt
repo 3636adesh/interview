@@ -1,0 +1,179 @@
+Basic Kafka Concepts
+What is Kafka and why is it used?
+
+What are Kafka topics and partitions?
+
+What is a Kafka broker?
+
+Difference between Kafka Producer and Consumer?
+
+What is a Consumer Group? How does it work?
+
+What happens when a consumer group has more consumers than partitions?
+
+What is Kafka Zookeeper and why is it required? (And why is it removed in newer versions?)
+
+🔹 Advanced Kafka Topics
+What is ISR (In-Sync Replicas)?
+
+What is replication in Kafka?
+
+How does Kafka ensure message durability and fault tolerance?
+
+What is the difference between acks=0, acks=1, and acks=all?
+
+What is the role of min.insync.replicas setting?
+
+Explain the message delivery semantics: at-most-once, at-least-once, exactly-once.
+
+What is idempotence in Kafka? How do you achieve exactly-once delivery?
+
+How does Kafka handle backpressure?
+
+🔹 Performance & Tuning
+How do you improve Kafka consumer performance?
+
+What are some Kafka producer tuning parameters?
+
+What is batch size and linger.ms in Kafka producer config?
+
+What is message compaction vs log retention?
+
+How do you monitor Kafka health in production?
+
+🔹 Kafka Integration & Real-Time Use
+How did you integrate Kafka with Spring Boot?
+
+How do you handle retries and dead-letter queues (DLQ)?
+
+How to handle failures in Kafka consumer processing?
+
+Have you used Kafka Streams or Kafka Connect?
+
+What’s the difference between Kafka and RabbitMQ (or any other messaging system)?
+
+🔹 Scenario-Based Real Time Questions
+What happens when a Kafka broker goes down?
+
+Your Kafka consumer is lagging behind. How will you debug it?
+
+What happens if the consumer crashes after reading a message but before processing it?
+
+How do you ensure ordered processing of messages in Kafka?
+
+You need to scale Kafka consumers dynamically. How do you approach this?
+
+What are the best strategies to prevent bottlenecks in Kafka load balancing
+How does Kafka's default round-robin producer assignment impact load distribution
+How does self-balancing clusters improve Kafka load management automatically
+What are the trade-offs of increasing partitions on Kafka cluster load and throughput
+Kafka Scenario: 50,000 Producer Messages and Only One Consumer
+How would latency and throughput change if one consumer reads from 50,000 producer streams
+
+🔍 Monitoring & Troubleshooting
+Your Kafka consumers are seeing high message lag. How would you troubleshoot the issue?
+
+What metrics would you look at?
+
+How do you differentiate between slow consumers and broker performance?
+
+You notice increased latency in Kafka message delivery. What are the possible causes and how do you identify the root cause?
+
+A Kafka topic has a growing number of partitions. Suddenly, producers start to fail or throw exceptions. What could be causing this?
+
+A Kafka broker goes down frequently during high throughput. How do you analyze the broker logs and JVM heap to find memory or GC-related issues?
+
+You see a NotEnoughReplicasException error in your logs. What does this mean, and how should you respond?
+
+🛠️ Kafka Configuration & Tuning
+What configurations would you modify to tune Kafka for low-latency, high-throughput use cases like real-time analytics or log processing?
+
+How do producer settings like acks, linger.ms, and batch.size impact performance and delivery guarantees?
+
+How would you configure Kafka to support compacted topics for streams that only care about the latest state per key?
+
+What’s the impact of increasing num.partitions for a topic used by multiple consumer groups? Can it lead to any issues?
+
+📦 Data Consistency & Delivery Guarantees
+How do you achieve exactly-once delivery across Kafka and a downstream database like PostgreSQL using Kafka Streams or Kafka Connect?
+
+What is the impact of enabling Kafka’s idempotent producer and transactional writes? What problems does it solve, and what new constraints are introduced?
+
+If a consumer crashes just after consuming a message but before committing the offset, what happens? How does Kafka handle this by default?
+
+🌐 Distributed Setup & Operations
+How would you replicate Kafka topics across multiple data centers for DR (Disaster Recovery)? What tools or configurations would you use?
+
+Describe how to perform a rolling upgrade of a Kafka cluster with minimal downtime and no data loss.
+
+How do you deal with network partitions or Zookeeper flapping in a Kafka cluster? How does it impact brokers and throughput?
+
+🌪 Real-World Design Scenarios
+How would you design a Kafka-based system to stream millions of IoT sensor data updates per second to a real-time dashboard with sub-second latency?
+
+How would you handle schema evolution in a Kafka + Schema Registry setup, if multiple consumers use different versions of the schema?
+
+You need to ingest clickstream traffic from multiple countries with low latency. How do you design Kafka clusters and topics to handle multi-region latency and failover?
+
+How can Kafka be integrated with Kubernetes or managed on cloud platforms like AWS/GCP/Azure for scalable event-driven architecture?
+
+📊 Kafka Metrics & Observability
+Which Kafka metrics (JMX or Prometheus) do you monitor in real-time to ensure the health of producers, brokers, and consumers?
+
+How can lag between producer send and consumer receive be accurately measured in real-time? Can Kafka support historical lag analysis?
+
+🔐 Security & Governance
+How do you implement per-topic ACLs in Kafka for multi-tenant clusters? What are best practices for managing Kafka security in production?
+
+Your organization must meet audit requirements. How do you ensure Kafka logs all access and data changes for compliance?
+
+Bonus 🎯
+Kafka log segments are not getting deleted even though the retention period is expired. Why?
+
+(Check segment size, active producer, or log cleaner status.)
+
+What Kafka component would you use to sync data from PostgreSQL to Kafka in near-real-time? What are the challenges with Change-Data-Capture (CDC)?
+
+Would you like these questions with sample answers, or do you want me to create a mini Kafka real-time diagnostic quiz or case study to test your skills interactively?
+
+Advanced Apache Kafka Questions
+💾 Kafka Internals and Architecture:
+What are the key trade-offs between a high replication factor and throughput in Kafka? How would you balance them in a production system?
+
+How does Kafka ensure ordering at the partition level, and what factors can break the order guarantee?
+
+Explain the role of the ISR (In-Sync Replica) set. What happens if all followers fall out of the ISR? How does Kafka handle such a situation?
+
+How does Kafka handle message deduplication, and can Kafka guarantee exactly-once delivery semantics? What are the limitations of this approach?
+
+Describe what happens internally when a Kafka broker crashes that is the leader for a partition. How is a new leader selected? Can data loss occur?
+
+🚦 Kafka Performance and Scaling:
+What are some real-world scenarios in which Kafka throughput suddenly degrades? How would you investigate and resolve the issue?
+
+Kafka persists data to disk. Explain how Kafka achieves high throughput despite using disk-based storage.
+
+What are the performance implications of increasing the number of partitions for a topic? How do you determine the optimal number of partitions?
+
+Describe how Kafka achieves horizontal scalability. What bottlenecks might still appear in a large-scale Kafka deployment?
+
+🔧 Reliability and Fault Tolerance:
+When can Kafka message loss occur even if replication is enabled? How can this be prevented?
+
+What is log compaction in Kafka, and how is it different from log retention? What are the use cases for log-compacted topics?
+
+How do Kafka’s replication and producer acknowledgments (acks) settings interact with each other to ensure durability?
+
+🧩 Kafka in Real-World Scenarios:
+Design a Kafka-based system that ensures exactly-once processing from data ingestion to downstream consumers. What components or configurations are essential?
+
+How would you implement Kafka multi-cluster architecture for global distribution with minimal latency and high resilience?
+
+You observe that Kafka consumers are lagging behind production. What could be the possible causes? How would you troubleshoot and fix them?
+
+🔐 Security and Data Governance:
+How does Kafka ensure secure data transfer between brokers and clients? What are the differences between SSL, SASL, and ACLs in Kafka?
+
+What are the implications of enabling idempotent producers in Kafka? When should they be used, and what are the limitations?
+
+Would you like a set of answers, or perhaps even a quiz-style format or broken down by topic (e.g., producers, consumers, replication)?

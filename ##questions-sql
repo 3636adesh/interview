@@ -1,0 +1,32 @@
+1. Difference between WHERE and HAVING — interviewers ask this to check GROUP BY clarity 
+2. INNER JOIN vs LEFT JOIN — when does LEFT JOIN return extra rows? 
+3. Can a table have multiple UNIQUE keys but only one PRIMARY KEY? Why? 
+4. What happens internally when you create an INDEX? 
+5. When should you NOT use an index even if queries are slow? 
+6. DELETE vs TRUNCATE vs DROP — which one is faster and why? 
+7. How does a composite index work? Order matter karta hai? 
+8. Difference between clustered and non-clustered index 
+9. What is a covering index? Real use case? 
+10. How does SQL handle NULL in comparisons?
+
+11. What is ACID and which part is hardest to guarantee? 
+12. What is a transaction isolation level? Which one is default? 
+13. Dirty Read vs Phantom Read — real production example 
+14. Difference between UNION and UNION ALL (performance angle) 
+15. What is an execution plan and how do you read it? 
+16. Why GROUP BY fails without aggregate functions sometimes? 
+17. How to find duplicate records without using GROUP BY? 
+18. What is a self join and where is it actually used? 
+19. How does pagination work internally using LIMIT & OFFSET? 
+20. Why OFFSET pagination becomes slow for large tables?
+
+21. What is a VIEW and when should you avoid it? 
+22. Stored Procedure vs Query from Java — which is better and why? 
+23. How to prevent SQL Injection at database + Java level? 
+24. What is normalization and when is denormalization better? 
+25. What happens when a transaction fails midway? 
+26. What is a deadlock? How do databases resolve it? 
+27. How does foreign key improve data integrity but reduce performance? 
+28. What is write amplification in databases? 
+29. Difference between OLTP and OLAP databases 
+30. One SQL optimization you did in real project?

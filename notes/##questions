@@ -62,3 +62,12 @@ Write a program to reverse a string.
 Given an array of integers {1,2,3,4,5}, find the second largest number.
 Predict the output of code snippets (e.g., involving loops, exceptions, or collections).
 Implement an interface (e.g., Building) in two classes (School, Hospital) and explain.
+
+-------------------
+
+Statement:
+Given an array of integers nums[] and an integer k, return the count of subarrays that have exactly k distinct integers.
+
+Input: nums = [1,2,1,2,3], k = 2
+Output: 7
+Explanation: [1,2], [2,1], [1,2], [2,3], [1,2,1], [2,1,2], [1,2,1,2]
